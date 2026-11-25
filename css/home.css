@@ -1,0 +1,245 @@
+
+/* =========================
+   HOME / HERO SECTION
+========================= */
+
+.hero {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 6%;
+    background: var(--white);
+    text-align: center;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Greeting */
+
+.hero-greeting {
+    color: var(--primary-dark);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Name */
+
+.hero-content h1,
+.hero-container h1 {
+    font-family: 'playfair display', serif;
+    font-size: clamp(40px, 5vw, 62px);
+    line-height: 1.2;
+    color: var(--dark-teal);
+    font-weight: 800;
+}
+
+.hero-container h1 span {
+    color: var(--primary);
+}
+
+/* Professional Title */
+
+.hero-container h2 {
+    font-size: 26px;
+    color: var(--dark-text);
+    margin-top: 18px;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+/* Description */
+
+.hero-description {
+    max-width: 680px;
+    color: var(--light-text);
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 14px 23px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.primary-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    border: 1px solid var(--primary);
+    color: var(--dark-teal);
+}
+
+.secondary-btn:hover {
+    background: var(--light-cyan);
+    transform: translateY(-3px);
+}
+
+/* Social Media Links */
+
+.hero-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 38px;
+}
+
+.hero-socials a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--dark-teal);
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.hero-socials a i {
+    font-size: 22px;
+    color: var(--primary-dark);
+}
+
+.hero-socials a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 80vh;
+        padding: 55px 5%;
+    }
+
+    .hero-container h1 {
+        font-size: 38px;
+    }
+
+    .hero-container h2 {
+        font-size: 21px;
+    }
+
+    .hero-greeting {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+    }
+
+    .hero-socials {
+        gap: 20px;
+    }
+
+    .hero-socials a {
+        font-size: 13px;
+    }
+
+    .hero-socials a i {
+        font-size: 19px;
+    }
+}
+
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.scroll-indicator a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.scroll-indicator i {
+    font-size: 20px;
+    color: var(--primary);
+    animation: scrollDown 1.5s infinite;
+}
+
+@keyframes scrollDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+/* Mobile Adjustment */
+@media (max-width: 650px) {
+    .scroll-indicator {
+        bottom: 15px;
+    }
+}
+.home-section {
+    position: relative;
+}

@@ -1,0 +1,35 @@
+
+/* Global Styles */
+
+:root {
+    --primary: #06B6D4;
+    --primary-dark: #0891B2;
+    --light-cyan: #ECFEFF;
+    --dark-teal: #164E63;
+    --dark-text: #172B3A;
+    --light-text: #64748B;
+    --white: #FFFFFF;
+    --border: #E2E8F0;
+    --card-bg: #F8FAFC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: 'playfair display', serif;
+    color: var(--dark-text);
+    background: var(--white);
+}
+
+a {
+    text-decoration: none;
+}

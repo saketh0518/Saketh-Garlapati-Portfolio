@@ -1,0 +1,239 @@
+
+/* ==============================
+   ACHIEVEMENTS SECTION
+============================== */
+
+.achievements-section {
+    padding: 90px 8%;
+    background: var(--white);
+}
+
+/* Section Heading */
+
+.achievements-section .section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.achievements-section .section-tag {
+    display: inline-block;
+    color: var(--primary-dark);
+    background: var(--light-cyan);
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.achievements-section .section-heading h2 {
+    font-size: 34px;
+    color: var(--dark-text);
+    margin-bottom: 12px;
+}
+
+.achievements-section .section-heading p {
+    color: var(--light-text);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Achievement Container */
+
+.achievement-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Achievement Card */
+
+.achievement-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+
+    padding: 35px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    transition: 0.3s ease;
+}
+
+.achievement-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 12px 28px rgba(6, 182, 212, 0.10);
+    transform: translateY(-5px);
+}
+
+/* Achievement Icon */
+
+.achievement-icon {
+    width: 85px;
+    height: 85px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--light-cyan);
+    color: var(--primary-dark);
+
+    border-radius: 18px;
+    font-size: 36px;
+}
+
+/* Achievement Content */
+
+.achievement-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.achievement-label {
+    display: inline-block;
+    color: var(--primary-dark);
+    background: var(--light-cyan);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+}
+
+.achievement-content h3 {
+    color: var(--dark-text);
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.achievement-content h4 {
+    color: var(--dark-teal);
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.achievement-description {
+    color: var(--light-text);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Symposium Details */
+
+.achievement-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.achievement-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--light-text);
+    font-size: 13px;
+}
+
+.achievement-meta i {
+    color: var(--primary-dark);
+}
+
+/* Action Buttons */
+
+.achievement-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.achievement-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 12px 18px;
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background: var(--dark-teal);
+    color: var(--white);
+}
+
+.primary-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: var(--light-cyan);
+    color: var(--dark-teal);
+    border: 1px solid var(--primary);
+}
+
+.secondary-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .achievements-section {
+        padding: 70px 6%;
+    }
+
+    .achievement-card {
+        flex-direction: column;
+        padding: 25px;
+        gap: 22px;
+    }
+
+    .achievement-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+
+    .achievement-content h3 {
+        font-size: 20px;
+    }
+
+    .achievement-content h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .achievements-section .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .achievement-meta {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .achievement-actions {
+        flex-direction: column;
+    }
+
+    .achievement-btn {
+        width: 100%;
+    }
+}
